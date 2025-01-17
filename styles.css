@@ -1,0 +1,119 @@
+body {
+    background: url('bg4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f6f5fd;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+header {
+    background: #333;
+    color: #efeff2;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(15, 13, 13, 0.3);
+    padding: 20px;
+    backdrop-filter: blur(1px);
+    grid : 0%
+}
+
+.sidebar {
+    
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 1000px;
+    margin: 2px auto;
+    padding: 50px;
+    text-align : center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #0b0808;
+    border-radius: 10px; 
+    font-size: 16px;
+    opacity: 0.2; 
+    color: #580303;
+}
+
+form button {
+    background-color: #5a05e4;
+    color: #fff;
+    opacity: 0.9;
+
+}
+
+form button:hover {
+    background-color: #077bf7;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+        
+
+        .grid-container {
+            padding: 20px;
+            background: rgba(99, 82, 82, 0.01); 
+            border-radius: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        form h2, label {
+            color: #fff;
+        }

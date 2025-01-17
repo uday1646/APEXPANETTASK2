@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section class="content">
+            <h1>Welcome to the FullStackFlow</h1>
+            <p>
+                Our website is designed to provide you with comprehensive solutions for your projects. We offer a variety of tools 
+                to enhance your productivity, including a fully functional contact form and a dynamic task management system.
+            </p>
+            <div class="form-container">
+                <form id="contactForm">
+                    <h2>Contact Us</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Add task regarding your project</h2>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button id="addTaskBtn">Add Task</button>
+            <ul id="taskList"></ul>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
